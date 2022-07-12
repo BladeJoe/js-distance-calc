@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="currency converter">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Currency converter</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <h2 class="text-center my-5">Insert distance in KM</h2>
+            <form id="form" class=" w-50 d-flex flex-wrap mx-auto mb-5" action="https://echo.htmlacademy.ru">
+                <input type="text" class="form-control  text-center  mb-2 border-2 border-primary" placeholder="Distance" id="input">
+                <button type="submit" class="btn btn-outline-primary w-100 ">Calculate estimated time</button>
+
+            </form>
+
+            <div
+                class="row-cols-sm-2 row-cols-1 flex-wrap d-flex justify-content-center align-items-center mx-auto gap-3">
+                <div class="card bg-info" style="width: 18rem;">
+                    <img class="p-4" style="object-fit: contain;" height="250" width="100%" src="./images/walk.png"
+                        alt="walk">
+                    <div class="card-body ">
+                        <input value="" class="text-center fw-bold fs-6 w-100 d-flex mx-auto d-inline-block" type="text" id="walkTime" disabled>
+                    </div>
+                </div>
+
+                <div class="card bg-warning" style="width: 18rem;">
+                    <img class="p-4" style="object-fit: contain;" height="250" width="100%" src="./images/bike.png"
+                        alt="walk">
+                    <div class="card-body ">
+                        <input value="" class="text-center fw-bold fs-6 w-100 d-inline-block mx-auto d-flex" type="text" id="bikeTime" disabled>
+                    </div>
+                </div>
+                <div class="card bg-danger" style="width: 18rem;">
+                    <img class="p-4" style="object-fit: contain;" height="250" width="100%" src="./images/car.png"
+                        alt="walk">
+                    <div class="card-body ">
+                        <input value="" class="text-center fw-bold fs-6 w-100 d-flex mx-auto d-inline-block" type="text" id="carTime" disabled>
+                    </div>
+                </div>
+                <div class="card bg-success" style="width: 18rem;">
+                    <img class="p-4" style="object-fit: contain;" height="250" width="100%" src="./images/plane.png"
+                        alt="walk">
+                    <div class="card-body ">
+                        <input value="" class="text-center fw-bold fs-6 w-100 d-flex mx-auto d-inline-block" type="text" id="planeTime" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
